@@ -5,7 +5,6 @@ var renderer
 var clock
 var cubes = []
 export var keyboard = {}
-var speed = 0.2
 var currentUpdate;
 init()
 animate()

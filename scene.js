@@ -1,5 +1,6 @@
 import * as matgine from './matgine.js'
 import * as main from './scripts.js'
+var speed = 0.2;
 function UpdateCamera (deltaTime) {
   if (main.keyboard[87]) {
     // W key
