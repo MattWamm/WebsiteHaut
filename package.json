@@ -1,0 +1,23 @@
+{
+  "name": "haut",
+  "version": "0.0.1",
+  "description": "A small three js framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattisWammes/WebsiteHaut.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MattisWammes/WebsiteHaut/issues"
+  },
+  "homepage": "https://github.com/MattisWammes/WebsiteHaut#readme",
+  "dependencies": {
+    "electron": "^16.0.8",
+    "three": "^0.137.5"
+  }
+}
