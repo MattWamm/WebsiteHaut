@@ -1,71 +1,114 @@
 {
-    "Models": [
-      {
-        "path": "./models/Avocado/glTF/Avocado.gltf",
-        "name": "avocado"
+  "Models": [
+    {
+      "path": "./models/Avocado/glTF/Avocado.gltf",
+      "name": "avocado"
+    },
+    {
+      "path": "./models/wolverine_work_boot/scene.gltf",
+      "name": "boot"
+    }
+  ],
+  "Scene": [
+    {
+      "name": "avocado",
+      "model": "avocado",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
-      {
-        "path": "./models/wolverine_work_boot/scene.gltf",
-        "name": "boot"
-      }
-    ],
-    "Scene": [
-      {
-        "name": "avocado",
-        "model": "avocado",
-        "position": {
-          "x": 0,
-          "y": 0,
-          "z": 0
-        },
-        "rotation": {
-          "x": 0,
-          "y": 0,
-          "z": 0
-        },
-        "scale": {
-          "x": 1,
-          "y": 1,
-          "z": 1
-        }
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
       },
-      {
-        "name": "boot",
-        "model": "boot",
-        "position": {
-          "x": 0.3,
-          "y": 0,
-          "z": 0
-        },
-        "rotation": {
-          "x": 0,
-          "y": 0.3,
-          "z": 0
-        },
-        "scale": {
-          "x": 0.2,
-          "y": 0.2,
-          "z": 0.2
-        }
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
       },
-      {
-        "name": "boot1",
-        "model": "boot",
-        "position": {
-          "x": 0.3,
-          "y": 0,
-          "z": 0.045
-        },
-        "rotation": {
-          "x": 0,
-          "y": -0.3,
-          "z": 0
-        },
-        "scale": {
-          "x": 0.2,
-          "y": 0.2,
-          "z": -0.2
+      "children": [
+        {
+          "name": "avocado1",
+          "model": "avocado",
+          "position": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "children": [{
+            "name": "avocado2",
+            "model": "avocado",
+            "position": {
+              "x": 1,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "children": []
+          }]
         }
-      }
-    ]
-  }
+      ]
+    },
+    {
+      "name": "boot",
+      "model": "boot",
+      "position": {
+        "x": 0.3,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0.3,
+        "z": 0
+      },
+      "scale": {
+        "x": 0.2,
+        "y": 0.2,
+        "z": 0.2
+      },
+      "children": []
+    },
+    {
+      "name": "boot1",
+      "model": "boot",
+      "position": {
+        "x": 0.3,
+        "y": 0,
+        "z": 0.045
+      },
+      "rotation": {
+        "x": 0,
+        "y": -0.3,
+        "z": 0
+      },
+      "scale": {
+        "x": 0.2,
+        "y": 0.2,
+        "z": -0.2
+      },
+      "children": []
+    }
+  ]
+}
