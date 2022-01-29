@@ -9,6 +9,10 @@
       "name": "boot"
     }
   ],
+  "Scripts":[
+    "scene.js"
+  ]
+  ,
   "Scene": [
     {
       "name": "avocado",
@@ -33,7 +37,7 @@
           "name": "avocado1",
           "model": "avocado",
           "position": {
-            "x": 1,
+            "x": 0.1,
             "y": 0,
             "z": 0
           },
@@ -51,7 +55,7 @@
             "name": "avocado2",
             "model": "avocado",
             "position": {
-              "x": 1,
+              "x": 0.1,
               "y": 0,
               "z": 0
             },

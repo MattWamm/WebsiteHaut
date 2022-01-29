@@ -1,5 +1,4 @@
-import { GLTFLoader } from './threejs_imports/GLTFLoader.js'
-
+import { GLTFLoader } from './threejs_imports/GLTFLoader.js';
 const models = new Map()
 const textures = new Map()
 const scenes = new Map()
@@ -83,11 +82,23 @@ export function LoadScene (path, name) {
   getJSON(path, function (statusCode, data) {
     data.Models.forEach(element => {
       LoadModel(element.path, element.name)
-    })
+    });
     data.Scene.forEach(element => {
       console.log('Loadin scene')
       WaitSetCreate(element, nScene)
-    })
+    });
+    document.getElementById("sceneScripts").innerHTML = "";
+    data.Scripts.forEach(
+      sceneScripts =>
+      {
+        console.log(sceneScripts);
+        var script = document.createElement("script");
+        script.type = "module";
+        script.src = sceneScripts;
+        document.getElementById("sceneScripts").appendChild(script);
+      }
+    )
+
     console.log(data)
     var scene = new THREE.Scene()
   })
