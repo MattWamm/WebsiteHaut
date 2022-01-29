@@ -1,11 +1,11 @@
 {
     "Models": [
       {
-        "path": "/models/Avocado/glTF/Avocado.gltf",
+        "path": "./models/Avocado/glTF/Avocado.gltf",
         "name": "avocado"
       },
       {
-        "path": "/models/wolverine_work_boot/scene.gltf",
+        "path": "./models/wolverine_work_boot/scene.gltf",
         "name": "boot"
       }
     ],
