@@ -1,4 +1,5 @@
-import * as matgine from './matgine.js'
+import * as THREE from "./node_modules/three/build/three.module.js"
+import * as haut from './haut.js'
 var curScene
 export var camera
 var renderer
@@ -12,8 +13,9 @@ animate()
 function init () {
   clock = new THREE.Clock();
   clock.start();
-  matgine.LoadScene('scene.json', 'start');
-  curScene = matgine.GetScene('start');
+  haut.Init();
+  haut.LoadScene('scene.json', 'start');
+  curScene = haut.GetScene('start');
   //create camera
   camera = new THREE.PerspectiveCamera(
     50,
@@ -23,11 +25,12 @@ function init () {
   );
   camera.position.set(0, 0.02, 0);
   camera.position.z = 1;
-  var light = new THREE.DirectionalLight(0xffffff, 5);
-  var ambient = new THREE.AmbientLight(0x404040);
+  var light = new THREE.DirectionalLight(0xffffff, 0);
+  var ambient = new THREE.AmbientLight(0x808080);
   curScene.add(ambient);
   curScene.add(light);
-  matgine.instances.set("sun", light);
+  curScene.background = 0x000000;
+  haut.instances.set("sun", light);
 
   //create renderer
   renderer = new THREE.WebGLRenderer();
