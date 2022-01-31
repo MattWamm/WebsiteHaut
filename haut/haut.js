@@ -1,5 +1,5 @@
-import * as THREE from "./node_modules/three/build/three.module.js"
-import { GLTFLoader } from "./threejs_imports/GLTFLoader.js"
+import * as THREE from "../node_modules/three/build/three.module.js"
+import { GLTFLoader } from "../threejs_imports/GLTFLoader.js"
 var models; 
 var textures ;
 var scenes ;

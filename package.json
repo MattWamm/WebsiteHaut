@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MattisWammes/WebsiteHaut#readme",
   "dependencies": {
+    "auto-import": "^0.1.4",
     "electron": "^16.0.8",
     "three": "^0.137.5"
   }

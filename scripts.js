@@ -1,5 +1,5 @@
 import * as THREE from "./node_modules/three/build/three.module.js"
-import * as haut from './haut.js'
+import * as haut from './haut/haut.js'
 var curScene
 export var camera
 var renderer
@@ -14,7 +14,7 @@ function init () {
   clock = new THREE.Clock();
   clock.start();
   haut.Init();
-  haut.LoadScene('scene.json', 'start');
+  haut.LoadScene('testingScene/scene.json', 'start');
   curScene = haut.GetScene('start');
   //create camera
   camera = new THREE.PerspectiveCamera(

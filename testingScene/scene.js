@@ -1,4 +1,4 @@
-import * as matgine from '../haut.js'
+import * as matgine from '../haut/haut.js'
 import * as main from '../scripts.js'
 var speed = 5;
 function UpdateCamera (deltaTime) {
