@@ -14,7 +14,7 @@
     }
   ],
   "Scripts":[
-    "scene.js"
+    "./testingScene/scene.js"
   ]
   ,
   "Scene": [
